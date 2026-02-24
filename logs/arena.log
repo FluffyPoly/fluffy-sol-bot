@@ -1,0 +1,24 @@
+/home/fluffy/sol-bot/src/indicator_arena.py:45: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  ind.last_updated = datetime.utcnow().isoformat()
+/home/fluffy/sol-bot/src/indicator_arena.py:86: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'updated': datetime.utcnow().isoformat(),
+
+🏆 INDICATOR LEADERBOARD
+============================================================
+1. 🔥 ATR_Stop {'mult': 1.85}
+   Trades: 9, Win: 77.8%, Sharpe: 0.00, PnL: $14.11
+2. 🔥 Volume {'mult': 1.38, 'lookback': 20}
+   Trades: 16, Win: 68.8%, Sharpe: 13.13, PnL: $10.50
+3. 🔥 StochRSI {'k': 14, 'd': 3, 'low': 20, 'high': 80}
+   Trades: 14, Win: 64.3%, Sharpe: 12.01, PnL: $8.41
+4.  RSI {'period': 14, 'low': 57, 'high': 63}
+   Trades: 16, Win: 62.5%, Sharpe: 5.59, PnL: $4.47
+5.  Bollinger {'period': 20, 'std': 2.0}
+   Trades: 12, Win: 58.3%, Sharpe: 15.27, PnL: $9.16
+6.  MACD {'fast': 12, 'slow': 26, 'signal': 9}
+   Trades: 11, Win: 54.5%, Sharpe: -3.51, PnL: $-1.93
+7. ❄️ EMA_Cross {'fast': 8, 'slow': 21}
+   Trades: 8, Win: 50.0%, Sharpe: 0.00, PnL: $11.19
+8. ❄️ VWAP {'deviation': 0.02}
+   Trades: 14, Win: 35.7%, Sharpe: -5.89, PnL: $-4.12
+============================================================

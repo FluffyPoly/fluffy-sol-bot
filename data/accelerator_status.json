@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-02-24T18:55:16.007973",
+  "win_rate": 0.0,
+  "generation": 0,
+  "top_indicators": [
+    {
+      "name": "RSI",
+      "win_rate": 0.0
+    },
+    {
+      "name": "MACD",
+      "win_rate": 0.0
+    },
+    {
+      "name": "Bollinger",
+      "win_rate": 0.0
+    },
+    {
+      "name": "Volume",
+      "win_rate": 0.0
+    },
+    {
+      "name": "StochRSI",
+      "win_rate": 0.0
+    }
+  ]
+}

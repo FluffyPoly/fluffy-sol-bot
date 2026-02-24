@@ -1,0 +1,111 @@
+{
+  "updated": "2026-02-24T18:55:15.739425",
+  "indicators": [
+    {
+      "name": "RSI",
+      "params": {
+        "period": 14,
+        "low": 57,
+        "high": 63
+      },
+      "trades": 16,
+      "wins": 10,
+      "win_rate": 0.625,
+      "sharpe": 5.5851590254406975,
+      "pnl": 4.468127220352558,
+      "last_updated": "2026-02-24T18:55:15.738813"
+    },
+    {
+      "name": "MACD",
+      "params": {
+        "fast": 12,
+        "slow": 26,
+        "signal": 9
+      },
+      "trades": 11,
+      "wins": 6,
+      "win_rate": 0.5454545454545454,
+      "sharpe": -3.5073374723470723,
+      "pnl": -1.9290356097908898,
+      "last_updated": "2026-02-24T18:55:15.737268"
+    },
+    {
+      "name": "Bollinger",
+      "params": {
+        "period": 20,
+        "std": 2.0
+      },
+      "trades": 12,
+      "wins": 7,
+      "win_rate": 0.5833333333333334,
+      "sharpe": 15.273009782036901,
+      "pnl": 9.163805869222141,
+      "last_updated": "2026-02-24T18:55:15.739419"
+    },
+    {
+      "name": "Volume",
+      "params": {
+        "mult": 1.38,
+        "lookback": 20
+      },
+      "trades": 16,
+      "wins": 11,
+      "win_rate": 0.6875,
+      "sharpe": 13.127948002087967,
+      "pnl": 10.502358401670374,
+      "last_updated": "2026-02-24T18:55:15.739112"
+    },
+    {
+      "name": "StochRSI",
+      "params": {
+        "k": 14,
+        "d": 3,
+        "low": 20,
+        "high": 80
+      },
+      "trades": 14,
+      "wins": 9,
+      "win_rate": 0.6428571428571429,
+      "sharpe": 12.012015485793182,
+      "pnl": 8.408410840055227,
+      "last_updated": "2026-02-24T18:55:15.738477"
+    },
+    {
+      "name": "VWAP",
+      "params": {
+        "deviation": 0.02
+      },
+      "trades": 14,
+      "wins": 5,
+      "win_rate": 0.35714285714285715,
+      "sharpe": -5.88912373182976,
+      "pnl": -4.122386612280833,
+      "last_updated": "2026-02-24T18:55:15.735402"
+    },
+    {
+      "name": "EMA_Cross",
+      "params": {
+        "fast": 8,
+        "slow": 21
+      },
+      "trades": 8,
+      "wins": 4,
+      "win_rate": 0.5,
+      "sharpe": 0.0,
+      "pnl": 11.18826024128907,
+      "last_updated": "2026-02-24T18:55:15.737859"
+    },
+    {
+      "name": "ATR_Stop",
+      "params": {
+        "mult": 1.85
+      },
+      "trades": 9,
+      "wins": 7,
+      "win_rate": 0.7777777777777778,
+      "sharpe": 0.0,
+      "pnl": 14.108411964964485,
+      "last_updated": "2026-02-24T18:55:15.729718"
+    }
+  ]
+}

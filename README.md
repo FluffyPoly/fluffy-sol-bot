@@ -33,17 +33,23 @@ python src/main.py  # Start daemon
 ## 🏗️ **Architecture**
 ```
 src/
-├── config.py          # Risk params (.env)
-├── wallet_manager.py  # Balance + signing
-├── jupiter_client.py  # DEX aggregator (best routes)
-├── market_scanner.py  # 50-token momentum
-├── trade_manager.py   # Entry/SL/TP execution
-├── telegram_alerts.py # Notifications
-└── main.py            # 24/7 daemon loop
+├── config.py              # Risk params (.env)
+├── wallet_manager.py      # Balance + signing
+├── jupiter_client.py      # DEX aggregator (best routes)
+├── market_scanner.py      # 50-token momentum
+├── trade_manager.py       # Entry/SL/TP execution
+├── telegram_alerts.py     # Notifications
+├── main.py                # 24/7 daemon loop
+├── backtest_engine.py     # Fee-adjusted backtesting ⭐
+├── indicator_arena.py     # Parallel indicator testing ⭐
+├── strategy_evolver.py    # Auto-evolution (Optuna) ⭐
+├── regime_detector.py     # Bull/bear/chop detection ⭐
+└── fee_manager.py         # Auto USDC→SOL swaps ⭐
 
-data/     # State + trades.jsonl
-logs/     # Heartbeat logs
-config/   # wallet.json 🔒
+data/         # State + trades.jsonl + accelerator_status.json
+logs/         # Heartbeat + swarm logs
+config/       # wallet.json 🔒
+scripts/      # training_swarm.sh (24/7 evolution)
 ```
 
 ## ⚙️ **Configuration** (`.env`)
@@ -84,9 +90,30 @@ docker build -t fluffy-sol-bot .
 docker run -d --env-file .env fluffy-sol-bot
 ```
 
+## 🧠 **AI Training Swarm** (24/7)
+```
+🔄 Continuous evolution cycle (5min):
+1. Backtest 50 tokens (fee-adjusted)
+2. Indicator arena (7 indicators compete)
+3. Strategy evolution (10 variants/hour)
+4. Regime detection (bull/bear/chop)
+5. Auto-deploy best (70%+ win rate)
+
+📊 Live status: data/accelerator_status.json
+📈 Target: 85%+ win rate (permanent)
+```
+
 ## 🐻 **About**
 Built by **FluffyPoly** - AI-trained momentum specialist.
 Trained on **50-token universe**, **millions of backtests**.
+
+**Features**:
+- ✅ Fee-adjusted realistic backtesting
+- ✅ Auto USDC→SOL fee reserve
+- ✅ Parallel indicator testing
+- ✅ Strategy self-evolution
+- ✅ Regime-adaptive trading
+- ✅ 24/7 autonomous operation
 
 **Wallet ready**: Fund → Live trading instant.
 

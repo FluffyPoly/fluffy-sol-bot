@@ -1,0 +1,20 @@
+/home/fluffy/sol-bot/src/strategy_evolver.py:57: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  created=datetime.utcnow().isoformat()
+/home/fluffy/sol-bot/src/strategy_evolver.py:84: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  f.write(f"\n## Generation {self.generation} - {datetime.utcnow().isoformat()}\n")
+🧬 Generation 0 - Creating variants...
+Testing 10 variants...
+  v0_0: 63.8%
+  v0_1: 55.3%
+  v0_2: 55.5%
+  v0_3: 54.6%
+  v0_4: 73.1%
+  v0_5: 73.2%
+  v0_6: 66.0%
+  v0_7: 62.3%
+  v0_8: 74.1%
+  v0_9: 53.3%
+🎯 NEW BEST: 74.1% win rate!
+
+✅ Best variant selected: 74.1%
+Current base: {'rsi_period': 13, 'rsi_low': 56, 'rsi_high': 64, 'vol_mult': 1.79, 'vol_lookback': 20, 'stop_atr_mult': 2.01, 'tp_percent': 0.33}

@@ -1,0 +1,5 @@
+/home/fluffy/sol-bot/src/regime_detector.py:130: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'timestamp': datetime.utcnow().isoformat(),
+🔄 REGIME SHIFT: unknown → bull (confidence: 0.50)
+Detected regime: bull
+Status: {'current_regime': 'bull', 'confidence': 0.5, 'recommended_strategy': {'bias': 'long', 'rsi_low': 55, 'rsi_high': 65, 'vol_mult': 1.3, 'position_size': 0.15}, 'history_count': 1}
